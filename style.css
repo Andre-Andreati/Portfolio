@@ -1,0 +1,182 @@
+body {
+    background: url();
+    font-family: sans-serif;
+    margin: 0px;
+    --anim-duration: 500ms;
+  }
+  header {
+    background-color: black;
+    color: rgb(196, 154, 28);
+    font-family: 'Andale Mono', monospace;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    z-index: 2;
+  }
+  .header-small {
+    height: 100px;
+    display: flex;
+    animation-name: reduce;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: forwards;
+  }
+    #header-img {
+      display: flex;
+      height: 100%;
+      object-fit: contain;
+    }
+  #header-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header-text-small {
+    animation-name: reduce;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: forwards;
+  }
+  #header-title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+  }
+  .header-title-small {
+    animation-name: reduce-header-title;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: forwards;
+  }
+  #title-1 {
+    font-size: 100px;
+    margin: 5px 5px 0px 5px;
+  }
+  .title-1-small { 
+    animation-name: reduce;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: forwards;
+  }
+  #subtitle {
+    font-size: 20px;
+    margin: -10px 5px 5px 5px;
+    line-height: 40px;
+  }
+  #nav-bar {
+    font-size: 25px;
+    width: 150px;
+    align-self: center;
+    text-align: right;
+    line-height: 35px;
+  }
+  .nav-bar-small {
+    text-align: center;
+    animation-name: reduce-nav-bar;
+    animation-duration: var(--anim-duration);
+    animation-fill-mode: forwards;
+   }
+  
+  @keyframes reduce {
+    0% {
+      height: 200px;
+    }
+    100% {
+      height: 100px;
+      font-size: 55px;
+    }
+  }
+  
+  @keyframes reduce-header-title {
+    0% {
+      height: 50%;
+      margin-left: 50px;
+    }
+    100% {
+      height: 100%;
+      margin-left: 0px;
+    }
+  }
+  
+  @keyframes reduce-nav-bar {
+    0% {
+    }
+    100% {
+      width: 250px;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  
+  main {
+    position: relative;
+    top: 200px;
+    margin: 0 20% 50px 20%;
+    z-index: 1;
+  }
+  #units {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .droid-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .droid-text {
+    max-width: 400px;
+    justify-self: start;
+  }
+  .nav-link {
+    margin: 5px;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 750px) {
+    
+    #header-title {
+      margin-left: 0px;
+  }
+    #header-text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+    #nav-bar {
+      display: flex;
+      font-size: 12px;
+      width: 100%;
+      justify-content: center;
+      line-height: 35px;
+  }
+    .nav-bar-small {
+      display: flex;
+      font-size: 12px;
+      width: 100%;
+      justify-content: center;
+      line-height: 35px;
+      animation-name: reduce-nav-bar-smallpage;
+      animation-duration: var(--anim-duration);
+      animation-fill-mode: forwards;
+   }
+    @keyframes reduce-nav-bar-smallpage {
+      0% {
+      }
+      100% {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+    main {
+      position: relative;
+      top: 200px;
+      margin: 0 5% 50px 5%;
+      z-index: 1;
+    }
+  }

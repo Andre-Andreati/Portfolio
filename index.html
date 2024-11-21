@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    </body>
+        <header id="header">
+            <div id="header-text">
+                <div id="header-title">
+                    <h1 id="title-1">Andreati</h1>
+                    <h2 id="subtitle">Mechanical Engineering</h2>
+                    <h2 id="subtitle">Full Stack Programming</h2>
+                    <h2 id="subtitle">Data Analytics</h2>
+                </div>
+                <nav id="nav-bar">
+                    <div id="nav-bar-1">
+                        <a href="#our-droids" id="link-1" class="nav-link">Our Droids</a>
+                        <a href="#spare-parts" id="link-2" class="nav-link">Spare Parts</a>
+                        <a href="#services" id="link-3" class="nav-link">Services</a>
+                    </div>
+                    <div id="nav-bar-2">
+                        <a href="#our-history" id="link-4" class="nav-link">Our History</a>
+                        <a href="#contact" id="link-5" class="nav-link">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="our-droids">
+                <h3>Mechanical Engineering</h3>
+                <p>Degree on UNICAMP - Best engineering school in Brazil - year 2010<br>
+                    13+ years of experience with automotive engineering:
+                </p>
+                <ul>
+                    <li>>Fuel eficiency and consumption</li>
+                    <li>Pollutant emissions</li>
+                    <li>Noise</li>
+                    <li>Certification and homologation</li>
+
+                </ul>
+                <h3>Some of our units:</h3>
+                <div id="units">
+                <!--<div id="units1">-->
+                    <img class="droid-img" src="s://vignette.wikia.nocookie.net/starwars/images/3/34/ProtocolDroid-SWE.png/revision/latest?cb=20160913024356" alt="Protocol droid.">
+                    <p id="protocol-droid" class="droid-text">
+                    <strong>Protocol droids </strong>fluent in all known languages on the galaxy, etiquete specialists, excels on housekeeping jobs. We also offer reprogrammed units for the most diverse applications!</p>
+                <!--</div>-->
+                <!--<div id="units2">-->
+                    <img  class="droid-img" src="shttps://vignette.wikia.nocookie.net/starwars/images/7/79/R5-J2_Sideshow.png/revision/latest?cb=20160809034342" alt="Astromech droid.">
+                    <p id="astromech-droid" class="droid-text">
+                    <strong>Astromech droids </strong>are your best option for on-the-go maintenance on ships, vehicles or even other droids. Extremely reliable and with multiple applications.</p>
+                <!--</div>-->
+                <!--<div id=units3>-->
+                    <img  class="droid-img" src="s://vignette.wikia.nocookie.net/starwars/images/c/cd/Battle_Droid.png/revision/latest?cb=20160910192832" alt="Battle droid.">
+                    <p id="battle-droid" class="droid-text">
+                    <strong>Battle droids </strong>excels both on personal security and on every kind of ground combat. We have fast, light units that can be used in large quantity for smash your enemies, and also heavier and more armored units.</p>
+                <!--</div>-->
+                img   descr.
+                </div>
+                
+            </section>
+            <section id="spare-parts">
+                <h3>Spare Parts</h3>
+                <p>We have every imaginable spare part for you droid!<br>From a simple fuse to complete intelligence systems.</p>
+            </section>
+            <section id="services">
+                <h3>Services</h3>
+                <p id="myP">
+                We have the best, well trained and experienced engineers ready to offer you all the maintenance your droid needs.<br>
+                We also work with restauration, customization, improvements and modifications to your droid.
+                </p>
+            </section>
+            <section id="our-history">
+                <h3>Our History</h3>    
+                <p>A family business inherited from generations, we love our job and are proud about offering you all the best in the droid business.<br>
+                Founded as a small junkyard in a cave near Mos Espa, our ancestors worked hard to prosper and improve their small business.<br>
+                Slowly and steady growing, the family expanded it's actuation as far as Mos Eisley, boldly facing all kind of adversity to eventually become the major droids and parts supplier in all Tattoine.<br>
+                Today we have a few dozens SandCrowlers spread around the globe, all ready to offer to you the best trade possible!</p>
+            </section>  
+            <section id="contact">
+                <h3>Contact</h3>    
+                <p>Our headquarter is located in the north-west zone of Bestine, just ask for "the Jawa's cave".<br>
+                We also have offices in Mos Eisley and Mos Espa.<br>
+                Our sandcrowlers are always traveling to every imaginable cornes in the whole planet. Just contact us giving your email in the form below and we will tell you where is the closest one!</p>
+                
+                <form id="form" action="https://www.freecodecamp.com/email-submit">   
+                <input name="email" id="email" type="email" placeholder="Enter your email" required>
+                <input id="submit" type="submit" value="SUBMIT" class="btn">
+                </input>
+                </form>
+            </section>  
+        </main>
+    </body>
+    
+    
+    
+    <script>
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").className = "header-small";
+            //document.getElementById("header-img").className = "header-img-small";
+            document.getElementById("header-text").className = "header-text-small";
+            document.getElementById("header-title").className = "header-title-small";
+            document.getElementById("nav-bar").className = "nav-bar-small";
+            document.getElementById("title-1").className = "title-1-small";
+        } else {
+            document.getElementById("header").className = "";
+            //document.getElementById("header-img").className = "";
+            document.getElementById("header-text").className = "";
+            document.getElementById("header-title").className = "";
+            document.getElementById("nav-bar").className = "";
+            document.getElementById("title-1").className = "";
+        }
+    }
+    </script>
+    
+</html>
+
