@@ -5,12 +5,12 @@ body {
   --nav-width: 400px;
   color: gray;
   background-image: 
-                linear-gradient(
-                  to bottom,
-                  black, 
-                  #332503,
-                  black
-                );
+    linear-gradient(
+      to bottom,
+      black, 
+      #332503,
+      black
+    );
 }
 
 ul {
@@ -117,7 +117,13 @@ main {
 #main-doc header {
   height: 100vh;
   padding-left: 1px;
-  background-color: red;
+    background-image: 
+    linear-gradient(
+      to bottom,
+      black, 
+      #332503,
+      black
+    );
 }
 #header-text {
   height: 100%;
@@ -145,19 +151,30 @@ main {
 
 .section {
   min-height: 100vh;
-  padding: 10px;
+  padding-top: 1px;
+  padding-left: 1px;
+    background-image: 
+    radial-gradient(
+      black, 
+      #332503,
+      black
+    );
+}
+
+.section-div {
+  min-height: 100vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  border-top: solid 1px #332503;
-  background-color: blue;
+  background-color: black;
 }
 .subtitle {
   font-size: 50px;
-  margin: 40px;
+  margin: 10px;
   margin-top: 60px;
 }
 
@@ -166,4 +183,7 @@ main {
   max-width: 200px;
   padding: 20px;
   vertical-align: middle;
+}
+p {
+ margin: 10px;
 }
