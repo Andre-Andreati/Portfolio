@@ -11,51 +11,50 @@
     <body>
         <nav id="navbar">
             <div id="sidebar-logo">
-                <img src="https://raw.githubusercontent.com/Andre-Andreati/Learning/refs/heads/main/Avatar.jpeg" alt="logo" />
+                <img id="sidebar_logo_img" src="https://raw.githubusercontent.com/Andre-Andreati/Learning/refs/heads/main/Avatar.jpeg" alt="logo" />
             </div>
-            <div id="nav-header">
-                <h1>Andreati</h1>
-                <h1>ENGINNERING</h1>
-            </div>
+            <header id="nav-header">
+                <a href="#header">
+                    <h1>Andreati</h1>
+                    <h1>ENGINNERING</h1>
+                </a>
+            </header>
             <ul id="nav-menu">
                 <li><a href="#mechanical">Mechanical</a></li>
                 <li><a href="#software">Software</a></li>
                 <li><a href="#data">Data and Machine Learning</a></li>
-                <li><a href="#examples">Examples</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <main id="main-doc">
-
             <header id="header">
                 <div id="header-text">
-                    <h1 id="title-1">Andreati</h1>
-                    <h1 id="title-1">ENGINEERING</h1>
-                    <h2 id="subtitle">Mechanical</h2>
-                    <h2 id="subtitle">Software</h2>
-                    <h2 id="subtitle">Data</h2>
+                    <p id="title-1">Hi, I'm Andreati.</p><br>
+                    <p id="title-2">I'm an experienced Mechanical ENGINEER who also make SOFTWARE and DATA stuff.</p><br><br><br>
+                    <p id="title-3">Scroll down or navigate through the side bar to see my formation, experience and habilities.</p><br>
+                    <p id="title-3">Don't hesitate on contact me if you think we can work together!</p>
                 </div>
             </header>
 
-            <section id="mechanical">
-                <h3>Mechanical Engineering</h3>
-                <p>Degree on UNICAMP - Best engineering school in Brazil - years 2005-2010<br>
-                    13+ years of experience with automotive engineering:
-                </p>
+            <section class="section" id="mechanical">
+                <h1 class="subtitle">Mechanical Engineering</h1><br>
+                <p>Degree on UNICAMP - Best engineering school in Brazil - years 2005-2010</p>
+                <p>13+ years of experience with automotive engineering:</p>
                 <ul>
                     <li>Fuel eficiency and consumption</li>
                     <li>Pollutant emissions</li>
                     <li>Noise</li>
                     <li>Certification and homologation</li>
-                </ul>
+                </ul><br>
 
-                <div class="mechanical-grid">
+                <div class="grid">
                     <a href="https://www.unicamp.br/" target="_blank" class="project project-tile">
                       <img
                         class="project-image"
                         src="https://unicamp.br/wp-content/themes/bx-unicamp-multisite/assets/img/logo-unicamp.svg"
-                        alt="project"
+                        alt="Unicamp"
                       />
                     </a>
 
@@ -63,37 +62,128 @@
                       <img
                         class="project-image"
                         src="https://www.fem.unicamp.br/wp-content/uploads/sites/60/2024/08/FEM_preferencial-2048x1266.png"
-                        alt="project"
+                        alt="FEM-UNICAMP"
                       />
                     </a>
                 </div> 
             </section>
 
-            <section id="software">
-                <h3>Software Engineering and Coding</h3>
-                <p>Self-taught, following the paths provided by freeCodeCamp, leetCode and others.</p><br>
-                <p>With strong problem-solving skills fom the engineering background and experience, and ability to quickly learn new tools and adapt to different envoriments and challanges.</p>
+            <section class="section" id="software">
+                <h1 class="subtitle">Software Engineering and Coding</h1><br>
+                <p>Self-taught, following the paths provided by freeCodeCamp, leetCode and others.</p>
+                <p>With strong problem-solving skills fom the engineering background and experience, and ability to quickly learn 
+                    new tools and adapt to different envoriments and challanges.</p>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL and no-SQL databases</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Javascript</li>
+                    <li>HTML, CSS</li>
+                </ul>
+
+                <div class="grid">
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png"
+                    alt="Python"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
+                    alt="PostgreSQL"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://images.icon-icons.com/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png"
+                    alt="MongoDB"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://2ality.com/2011/10/logo-js/js.jpg"
+                    alt="JavaScript"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://nodejs.org/static/logos/nodejsStackedDark.svg"
+                    alt="NodeJS"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                    alt="HTML"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                    alt="CSS"
+                    />
+                </div> 
             </section>
 
-            <section id="data">
-                <h3>Data and Machine Learning</h3>
-                <p>Data analyzes and engineering (cleaning, organizing, manipulating, presenting)</p><br>
+            <section class="section" id="data">
+                <h1 class="subtitle">Data and Machine Learning</h1>
+                <p>The mathematics, statistics and physics knowledge from the formal university graduation provides
+                    solid base knowledge for working with data-driven projects.</p>
+                <p>Data analyzes and engineering (cleaning, organizing, manipulating, presenting, graphs, dashboards).</p>
                 <ul>
                     <li>Python</li>
                     <li>Pandas</li>
                     <li>NumPy</li>
                     <li>Matplotlib</li>
                     <li>Seaborn</li>
-                    <li>SQL</li>
                 </ul>
-                <p>Machine learning and AI (training, testing, validating)</p><br>
+                <p>Machine learning and AI (training, testing, validating).</p>
                 <ul>
-                    <li>Python</li>
                     <li>TensorFlow</li>
                 </ul>
+
+                <div class="grid">
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/2048px-Python.svg.png"
+                    alt="Python"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://matplotlib.org/stable/_static/logo_dark.svg"
+                    alt="MatPlotLib"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/2560px-Pandas_logo.svg.png"
+                    alt="Pandas"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/1200px-NumPy_logo_2020.svg.png"
+                    alt="Numpy"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://seaborn.pydata.org/_images/logo-tall-lightbg.svg"
+                    alt="Seaborn"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/2560px-TensorFlow_logo.svg.png"
+                    alt="TensorFlow"
+                    />
+                </div> 
             </section>
 
-            <section id="resume">
+            <section class="section" id="portfolio">
                 <h3>Resume</h3>    
                 <p>A family business inherited from generations, we love our job and are proud about offering you all the best in the droid business.<br>
                 Founded as a small junkyard in a cave near Mos Espa, our ancestors worked hard to prosper and improve their small business.<br>
@@ -101,7 +191,7 @@
                 Today we have a few dozens SandCrowlers spread around the globe, all ready to offer to you the best trade possible!</p>
             </section>
             
-            <section id="contact">
+            <section class="section" id="contact">
                 <h3>Contact</h3>    
                 <p>Our headquarter is located in the north-west zone of Bestine, just ask for "the Jawa's cave".<br>
                 We also have offices in Mos Eisley and Mos Espa.<br>
