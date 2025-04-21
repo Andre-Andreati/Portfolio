@@ -131,15 +131,16 @@ main {
 }
 #title-1 {
   font-size: 50px;
-  margin: 10px;
+  margin: 50px;
 }
 #title-2 {
   font-size: 40px;
-  margin: 10px;
+  margin: 20px 50px;
+  margin-bottom: 120px;
 }
 #title-3 {
   font-size: 30px;
-  margin: 10px;
+  margin: 30px;
 }
 
 .section {
@@ -167,8 +168,7 @@ main {
 }
 .subtitle {
   font-size: 50px;
-  margin: 10px;
-  margin-top: 60px;
+  margin: 60px;
 }
 
 .grid {
