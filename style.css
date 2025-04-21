@@ -3,15 +3,8 @@ body {
   padding: 0px;
   width: 100%;
   --nav-width: 400px;
-  color: gray;
-  background-image: 
-    linear-gradient(
-      to bottom,
-      black, 
-      #332503,
-      black
-    );
-  --color-0: black;
+  color: gray; 
+  --color-0: black; /**/
   --color-1: #332400;
 }
 
