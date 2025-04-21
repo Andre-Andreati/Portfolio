@@ -11,6 +11,8 @@ body {
       #332503,
       black
     );
+  --color-0: black;
+  --color-1: #332400;
 }
 
 ul {
@@ -26,7 +28,7 @@ ul {
   top: 0px;
   height: 100%;
   width: var(--nav-width);
-  background-color: black;
+  background-color: var(--color-0);
 }
 
 #sidebar-logo {
@@ -67,9 +69,9 @@ ul {
   background-image: 
     linear-gradient(
       to right,
-      black, 
-      #332503,
-      black
+      var(--color-0), 
+      var(--color-1),
+      var(--color-0)
     );
 }
 #nav-menu li {
@@ -77,7 +79,7 @@ ul {
   font-size: 20px;
   line-height: 80px;
   margin-bottom: 1px;
-  background-color: black;
+  background-color: var(--color-0);
   text-align: center;
 }
 #nav-menu li:hover {
@@ -121,7 +123,7 @@ main {
     linear-gradient(
       to bottom,
       black, 
-      #332503,
+      var(--color-1),
       black
     );
 }
@@ -155,9 +157,10 @@ main {
   padding-left: 1px;
     background-image: 
     radial-gradient(
-      black, 
-      #332503,
-      black
+      var(--color-0), 
+      var(--color-1),
+      var(--color-1),
+      var(--color-0)
     );
 }
 
@@ -170,12 +173,16 @@ main {
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  background-color: black;
+  background-color: var(--color-0);
 }
 .subtitle {
   font-size: 50px;
   margin: 10px;
   margin-top: 60px;
+}
+
+.grid {
+  width: 100%;
 }
 
 .project-image {
