@@ -87,12 +87,12 @@ ul {
 }
 #nav-menu a:hover {
   text-decoration: none;
-  color: black;
+  color: var(--color-0);
 }
 
 @keyframes hover-menu {
   0% {
-    background-color: black;
+    background-color: var(--color-0);
   }
   100% {
     background-color: gray;
@@ -113,9 +113,9 @@ main {
     background-image: 
     linear-gradient(
       to bottom,
-      black, 
+      var(--color-0), 
       var(--color-1),
-      black
+      var(--color-0)
     );
 }
 #header-text {
@@ -130,6 +130,7 @@ main {
 }
 #title-1 {
   font-size: 50px;
+  line-height: 60px;
   margin: 50px;
 }
 #title-2 {
