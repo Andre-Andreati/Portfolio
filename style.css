@@ -3,10 +3,12 @@ body {
   padding: 0px;
   width: 100%;
   --nav-width: 400px;
-  color: gray; 
+  
   color: #4d4d4d; /*gray 70%*/
-  --color-0: black;
+  color: gray; 
+  
   --color-0: #ccc; /*gray 20%*/
+  --color-0: black;
   
   --color-1: #300; /*red*/
   --color-2: #800000;
