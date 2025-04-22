@@ -4,8 +4,9 @@ body {
   width: 100%;
   --nav-width: 400px;
   color: gray; 
-  --color-0: black; /**/
-  --color-1: #332400;
+  --color-0: black;
+  --color-1: #332a10;
+  --color-2: #806a29;
 }
 
 ul {
@@ -14,7 +15,6 @@ ul {
    }
 
 #navbar {
-  color: #332503;
   padding-top: 40px;
   position: fixed;
   left: 0px;
@@ -29,7 +29,7 @@ ul {
   height: 200px;
   margin: auto;
   border-radius: 50%;
-  border: solid 3px DarkGoldenRod;
+  border: solid 3px var(--color-2);
 }
 #sidebar_logo_img {
   width: 100%;
@@ -45,7 +45,7 @@ ul {
 #nav-header a {
   text-decoration: none;
   display: block;
-  color: DarkGoldenRod;
+  color: var(--color-2);
 }
 #nav-header a:hover {
   text-decoration: none;
@@ -104,8 +104,7 @@ main {
   width: auto;
   text-align: center;
   font-size: 20px;
-  line-height: 40px;;
-  background-color: rgb(50,10,50);
+  line-height: 40px;
 }
 
 #main-doc header {
@@ -127,7 +126,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: black;
+  background-color: var(--color-0);
 }
 #title-1 {
   font-size: 50px;
