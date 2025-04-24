@@ -1,3 +1,7 @@
+.dark-golden {
+  color: red
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -26,19 +30,20 @@ ul {
    }
 
 #navbar {
-  padding-top: 40px;
   position: fixed;
   left: 0px;
   top: 0px;
   height: 100%;
   width: var(--nav-width);
   background-color: var(--color-0);
+  display: flex;
+  flex-direction: column;
 }
 
 #sidebar-logo {
   max-width: 200px;
   height: 200px;
-  margin: auto;
+  margin: 50px auto 10px;
   border-radius: 50%;
   border: solid 3px var(--color-2);
 }
@@ -99,6 +104,34 @@ ul {
 #nav-menu a:hover {
   text-decoration: none;
   color: var(--color-0);
+}
+
+#nav-footer {
+  margin-top: auto;
+  width: fit-content;
+}
+#nav-footer:hover #dropdown {
+  display: block;
+}
+
+#nav-footer-text {
+  margin: 20px;
+  background: linear-gradient( to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: fit-content;
+  position: relative;
+  font-size: 20px;
+}
+
+#dropdown {
+  position: absolute;
+  bottom: 20px;
+  left: 180px;
+  width: 800px;
+  height: 400px;
+  background-color: darkblue;
+  display: block;
 }
 
 @keyframes hover-menu {
