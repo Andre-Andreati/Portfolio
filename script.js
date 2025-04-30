@@ -15,8 +15,8 @@ if (theme == 'dark') {
 
 themeToggle.addEventListener('click', function() {
     if (themeToggle.checked) {
-        html.style.setProperty("color-scheme", "light")
-    } else {
         html.style.setProperty("color-scheme", "dark")
+    } else {
+        html.style.setProperty("color-scheme", "light")
     }
 });
