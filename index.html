@@ -26,10 +26,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <footer id="nav-footer">
-                <img id="ligth-img" src="images/sun.png" alt="light">
-                <input type="checkbox" id="toggle" class="offscreen">
-                <label for="toggle" class="switch"></label>
-                <img id="dark-img" src="images/moon.png" alt="dark">
+                <img id="ligth-img" class="theme-img" src="images/sun.png" alt="light">
+                <div id="toggle-div">
+                    <input type="checkbox" class="hide-me" aria-labelledby="cb-label" id="theme-toggle" value="dark">
+                    <label class="toggle" for="theme-toggle" value="dark"></label>
+                </div>
+                <img id="dark-img" class="theme-img" src="images/moon.png" alt="dark">
             </footer>
         </nav>
     </div>
