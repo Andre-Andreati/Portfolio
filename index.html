@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <link href="style.css" rel="stylesheet"/>
-    </head>
-
-    <body>
+<body>
+    <div id="navbar-container">
         <nav id="navbar">
             <div id="sidebar-logo">
                 <img id="sidebar_logo_img" src="images/Avatar.jpeg" alt="logo">
@@ -28,204 +27,201 @@
             </ul>
             <footer id="nav-footer">
                 <p id="nav-footer-text">Any color you like</p>
-                <div id="dropdown">
-                  <p>TESTEST</p>
-                  <p>TESTest</p>
-                </div>
             </footer>
         </nav>
+    </div>
 
-        <main id="main-doc">
-            <header id="header">
-                <div id="header-text">
-                    <h1 id="title-1">Hi, I'm Andreati.</h1>
-                    <h2 id="title-2">I'm an experienced Mechanical ENGINEER who also make SOFTWARE and DATA stuff.</h2>
-                    <p id="title-3">Scroll down or navigate through the side bar to see my formation, experience and habilities.</p>
-                    <p id="title-3">Don't hesitate on contact me if you think we can work together!</p>
+    <main id="main-doc">
+        <header id="header">
+            <div id="header-text">
+                <h1 id="title-1">Hi, I'm Andreati.</h1>
+                <h2 id="title-2">I'm an experienced Mechanical ENGINEER who also make SOFTWARE and DATA stuff.</h2>
+                <p id="title-3">Scroll down or navigate through the side bar to see my formation, experience and habilities.</p>
+                <p id="title-3">Don't hesitate on contact me if you think we can work together!</p>
+            </div>
+        </header>
+
+        <section class="section" id="mechanical">
+            <div class="section-div">
+                <h1 class="subtitle">Mechanical Engineering</h1>
+                <p>Degree on UNICAMP - Best engineering school in Brazil - years 2005-2010</p>
+                <p>13+ years of experience with automotive engineering:</p>
+                <ul>
+                    <li>Fuel eficiency and consumption</li>
+                    <li>Pollutant emissions</li>
+                    <li>Noise</li>
+                    <li>Certification and homologation</li>
+                </ul>
+                <div class="grid">
+                    <a href="https://www.unicamp.br/" target="_blank" class="project project-tile">
+                    <img
+                        class="project-image"
+                        src="images/Unicamp.jpg"
+                        alt="Unicamp"
+                    />
+                    </a>
+
+                    <a href="https://www.fem.unicamp.br/" target="_blank" class="project project-tile">
+                    <img
+                        class="project-image"
+                        src="images/FEM.jpg"
+                        alt="FEM-UNICAMP"
+                    />
+                    </a>
+                </div> 
+            </div>
+        </section>
+
+        <section class="section" id="software">
+            <div class="section-div">
+                <h1 class="subtitle">Software Engineering and Coding</h1>
+                <p>Self-taught, following the paths provided by freeCodeCamp, leetCode and others.</p>
+                <p>With strong problem-solving skills fom the engineering background and experience, and ability to quickly learn 
+                    new tools and adapt to different envoriments and challanges.</p>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL and no-SQL databases</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Javascript</li>
+                    <li>HTML, CSS</li>
+                </ul>
+
+                <div class="grid">
+                    <img
+                    class="project-image"
+                    src="images/Python.png"
+                    alt="Python"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/Postgresql.png"
+                    alt="PostgreSQL"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/mongoDB.png"
+                    alt="MongoDB"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/JS.jpg"
+                    alt="JavaScript"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/nodejs.jpg"
+                    alt="NodeJS"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/HTML5.png"
+                    alt="HTML"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/CSS3.png"
+                    alt="CSS"
+                    />
                 </div>
-            </header>
+            </div>
+        </section>
 
-            <section class="section" id="mechanical">
-                <div class="section-div">
-                    <h1 class="subtitle">Mechanical Engineering</h1>
-                    <p>Degree on UNICAMP - Best engineering school in Brazil - years 2005-2010</p>
-                    <p>13+ years of experience with automotive engineering:</p>
-                    <ul>
-                        <li>Fuel eficiency and consumption</li>
-                        <li>Pollutant emissions</li>
-                        <li>Noise</li>
-                        <li>Certification and homologation</li>
-                    </ul>
-                    <div class="grid">
-                        <a href="https://www.unicamp.br/" target="_blank" class="project project-tile">
-                        <img
-                            class="project-image"
-                            src="images/Unicamp.jpg"
-                            alt="Unicamp"
-                        />
-                        </a>
+        <section class="section" id="data">
+            <div class="section-div">
+                <h1 class="subtitle">Data and Machine Learning</h1>
+                <p>The mathematics, statistics and physics knowledge from the formal university graduation provides
+                    solid base knowledge for working with data-driven projects.</p>
+                <p>Data analyzes and engineering (cleaning, organizing, manipulating, presenting, graphs, dashboards).</p>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+                <p>Machine learning and AI (training, testing, validating).</p>
+                <ul>
+                    <li>TensorFlow</li>
+                </ul>
 
-                        <a href="https://www.fem.unicamp.br/" target="_blank" class="project project-tile">
-                        <img
-                            class="project-image"
-                            src="images/FEM.jpg"
-                            alt="FEM-UNICAMP"
-                        />
-                        </a>
-                    </div> 
+                <div class="grid">
+                    <img
+                    class="project-image"
+                    src="images/Python.png"
+                    alt="Python"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/mpl.png"
+                    alt="MatPlotLib"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/Pandas.png"
+                    alt="Pandas"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/NumPy.png"
+                    alt="Numpy"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/Seaborn.png"
+                    alt="Seaborn"
+                    />
+
+                    <img
+                    class="project-image"
+                    src="images/TensorFlow.png"
+                    alt="TensorFlow"
+                    />
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section" id="software">
-                <div class="section-div">
-                    <h1 class="subtitle">Software Engineering and Coding</h1>
-                    <p>Self-taught, following the paths provided by freeCodeCamp, leetCode and others.</p>
-                    <p>With strong problem-solving skills fom the engineering background and experience, and ability to quickly learn 
-                        new tools and adapt to different envoriments and challanges.</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL and no-SQL databases</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>Javascript</li>
-                        <li>HTML, CSS</li>
-                    </ul>
-    
-                    <div class="grid">
-                        <img
-                        class="project-image"
-                        src="images/Python.png"
-                        alt="Python"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/Postgresql.png"
-                        alt="PostgreSQL"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/mongoDB.png"
-                        alt="MongoDB"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/JS.jpg"
-                        alt="JavaScript"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/nodejs.jpg"
-                        alt="NodeJS"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/HTML5.png"
-                        alt="HTML"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/CSS3.png"
-                        alt="CSS"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="data">
-                <div class="section-div">
-                    <h1 class="subtitle">Data and Machine Learning</h1>
-                    <p>The mathematics, statistics and physics knowledge from the formal university graduation provides
-                        solid base knowledge for working with data-driven projects.</p>
-                    <p>Data analyzes and engineering (cleaning, organizing, manipulating, presenting, graphs, dashboards).</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                    </ul>
-                    <p>Machine learning and AI (training, testing, validating).</p>
-                    <ul>
-                        <li>TensorFlow</li>
-                    </ul>
-    
-                    <div class="grid">
-                        <img
-                        class="project-image"
-                        src="images/Python.png"
-                        alt="Python"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/mpl.png"
-                        alt="MatPlotLib"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/Pandas.png"
-                        alt="Pandas"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/NumPy.png"
-                        alt="Numpy"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/Seaborn.png"
-                        alt="Seaborn"
-                        />
-    
-                        <img
-                        class="project-image"
-                        src="images/TensorFlow.png"
-                        alt="TensorFlow"
-                        />
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" id="portfolio">
-                <div class="section-div">
-                    <h3>Resume</h3>    
-                    <p>A family business inherited from generations, we love our job and are proud about offering you all the best in the droid business.<br>
-                    Founded as a small junkyard in a cave near Mos Espa, our ancestors worked hard to prosper and improve their small business.<br>
-                    Slowly and steady growing, the family expanded it's actuation as far as Mos Eisley, boldly facing all kind of adversity to eventually become the major droids and parts supplier in all Tattoine.<br>
-                    Today we have a few dozens SandCrowlers spread around the globe, all ready to offer to you the best trade possible!</p>
-                </div>
-            </section>
-            
-            <section class="section" id="contact">
-                <div class="section-div">
-                    <h3>Contact</h3>    
-                    <p>Our headquarter is located in the north-west zone of Bestine, just ask for "the Jawa's cave".<br>
-                    We also have offices in Mos Eisley and Mos Espa.<br>
-                    Our sandcrowlers are always traveling to every imaginable cornes in the whole planet. Just contact us giving your email in the form below and we will tell you where is the closest one!</p>
-                    
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">   
-                    <input name="email" id="email" type="email" placeholder="Enter your email" required>
-                    <input id="submit" type="submit" value="SUBMIT" class="btn">
-                    </input>
-                    </form>
-                </div>
-            </section>
-
-        </main>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <section class="section" id="portfolio">
+            <div class="section-div">
+                <h3>Resume</h3>    
+                <p>A family business inherited from generations, we love our job and are proud about offering you all the best in the droid business.<br>
+                Founded as a small junkyard in a cave near Mos Espa, our ancestors worked hard to prosper and improve their small business.<br>
+                Slowly and steady growing, the family expanded it's actuation as far as Mos Eisley, boldly facing all kind of adversity to eventually become the major droids and parts supplier in all Tattoine.<br>
+                Today we have a few dozens SandCrowlers spread around the globe, all ready to offer to you the best trade possible!</p>
+            </div>
+        </section>
         
-    </body>
+        <section class="section" id="contact">
+            <div class="section-div">
+                <h3>Contact</h3>    
+                <p>Our headquarter is located in the north-west zone of Bestine, just ask for "the Jawa's cave".<br>
+                We also have offices in Mos Eisley and Mos Espa.<br>
+                Our sandcrowlers are always traveling to every imaginable cornes in the whole planet. Just contact us giving your email in the form below and we will tell you where is the closest one!</p>
+                
+                <form id="form" action="https://www.freecodecamp.com/email-submit">   
+                <input name="email" id="email" type="email" placeholder="Enter your email" required>
+                <input id="submit" type="submit" value="SUBMIT" class="btn">
+                </input>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     
+</body>
+
 </html>
 
