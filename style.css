@@ -1,35 +1,5 @@
-.theme-dark {
-  /*background*/
-  --color-sidebar: hsl(240 100% 10%); /*dark blue*/
-  --color-main: black; /*black*/
-  /*divisors*/
-  --color-accent: hsl(45 50% 15%); /*dark golden*/
-  /*text*/
-    /*sidebar title*/
-    --color-sidebar-title: hsl(45 50% 30%); /*golden*/
-    /*menu*/
-    --color-sidebar-menu: gray;
-    /*main*/
-    --color-main-text: gray;
-}
-
-.theme-light {
-  /*background*/
-  --color-sidebar: hsl(0 0% 70%); /*gray 70%*/
-  --color-main: hsl(0 0% 80%); /*gray 80%*/
-  /*divisors*/
-  --color-accent: hsl(45 50% 40%); /*golden*/
-  /*text*/
-    /*sidebar title*/
-    --color-sidebar-title: hsl(45 50% 30%); /*golden*/
-    /*menu*/
-    --color-sidebar-menu: hsl(0 0% 30%); /*gray 80%*/
-    /*main*/
-    --color-main-text: hsl(0 0% 30%); /*gray 30%*/
-}
 html {
   color-scheme: light dark;
-  
   /*background*/
   --color-sidebar: light-dark(hsl(0 0% 70%), hsl(240 100% 10%)); /*gray 70%*/
   --color-main: light-dark(hsl(0 0% 80%), black); /*gray 80%*/
@@ -58,11 +28,6 @@ body {
   width: 100%;
   --nav-width: 400px;
 }
-
-ul {
-  list-style-type: none;
-  padding: 0px;
-   }
 
 #navbar-container {
   position: fixed;
@@ -128,6 +93,10 @@ ul {
       var(--color-sidebar)
     );
 }
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
 #nav-menu li {
   width: 100%;
   font-size: 20px;
@@ -158,16 +127,17 @@ ul {
   flex-direction: row;
 }
 .theme-img {
-  max-height: 24px;
-  padding: 5px
+  max-height: 26px;
+  padding: 0px;
 }
+
 .toggle {
     position: relative;
     display: inline-block;
-    margin-top: 0.5rem;
+    left: -4px;
     width: 50px;
     height: 26px;
-    background-color: hsl(0, 0%, 85%);
+    background-color: var(--color-main);
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.25s ease-in;
@@ -179,12 +149,12 @@ ul {
     left: 2px;
     width: 22px;
     height: 22px;
-    background-color: white;
+    background-color: gray;
     border-radius: 50%;
     transition: all 0.25s ease-out;
 }
-#theme-toggle-toggle:checked + .toggle {
-    background-color: hsl(102, 58%, 39%);
+#theme-toggle:checked + .toggle {
+    background-color: var(--color-main);
 }
 #theme-toggle:checked + .toggle::after {
     transform: translateX(24px);
