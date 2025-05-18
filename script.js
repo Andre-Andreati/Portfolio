@@ -20,3 +20,9 @@ themeToggle.addEventListener('click', function() {
         html.style.setProperty("color-scheme", "light")
     }
 });
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openNav() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
