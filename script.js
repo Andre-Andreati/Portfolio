@@ -26,3 +26,8 @@ toggle between hiding and showing the dropdown content */
 function openNav() {
   document.getElementById("nav-menu").classList.toggle("show");
 }
+
+function changeTheme() {
+  console.log('clicked')
+  document.getElementById("themeToggle").click();
+}
