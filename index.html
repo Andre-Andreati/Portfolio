@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link href="style.css" rel="stylesheet"/>
-</head>
-
 <body>
     <div id="navbar-container">
         <nav id="navbar">
@@ -18,7 +10,7 @@
                     <h1>ENGINNERING</h1>
                 </a>
             </header>
-            <button onclick="openNav()" id="menubtn">☰</button><button id="themebtn" onclick="changeTheme()"><img class="theme-img" src="images/sun.png" alt="light" id="dark-light-img"></button><ul id="nav-menu" class="hide-in-portrait" onclick="openNav()">
+            <button onclick="openNav()" id="menubtn">☰</button><ul id="nav-menu" class="hide-in-portrait" onclick="openNav()">
                 <li><a href="#mechanical">Mechanical</a></li>
                 <li><a href="#software">Software</a></li>
                 <li><a href="#data">Data and Machine Learning</a></li>
@@ -26,7 +18,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <footer id="nav-footer">
-                <img id="ligth-img" class="theme-img" src="images/sun.png" alt="light">
+                <button id="themebtn" onclick="changeTheme()"><img class="theme-img" src="images/sun.png" alt="light" id="dark-light-img"></button><img id="ligth-img" class="theme-img" src="images/sun.png" alt="light">
                 <div id="toggle-div">
                     <input type="checkbox" class="hide-me" id="theme-toggle" value="dark">
                     <label class="toggle" for="theme-toggle" value="dark"></label>
@@ -135,7 +127,7 @@
 
         <section class="section" id="certificates">
             <div class="section-div">
-                <h3>Certificates:</h3>
+                <h1 class="subtitle">Certificates:</h1>
                 <div class="grid">
                     <a href="https://www.freecodecamp.org/certification/Andreati/data-analysis-with-python-v7" target="_blank">
                         <img class="certificate-img" src="images/FCC Data Analysis.png" alt="Data Analysis Certification"></a>
@@ -148,7 +140,7 @@
                     <a href="https://www.freecodecamp.org/certification/Andreati/javascript-algorithms-and-data-structures" target="_blank">
                         <img class="certificate-img" src="images/FCC Javascript.png" alt="Javascript Algorithms and Data Structures Certification"></a>
                 </div>
-                <h3>Projects:</h3>
+                <h1 class="subtitle">Projects:</h1>
                 <div class="grid">
     
     <div class="certificate-container" style="margin-left: 0px;margin-top: 0px;margin-bottom: 0px;">
@@ -193,8 +185,5 @@
     </main>
 
     <script src="script.js"></script>
-    
+
 </body>
-
-</html>
-
