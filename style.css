@@ -261,12 +261,34 @@ a {
   vertical-align: middle;
 }
 
+.certificate-container {
+  display: inline-block;
+}
+
 .certificate-img {
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 300px;
   padding: 20px;
   vertical-align: middle;
 }
+
+/* The overlay effect - lays on top of the container and over the image */
+.certificate-overlay {
+  position: relative;
+  bottom: 150px;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.certificate-container:hover .certificate-overlay {
+  opacity: 1;
+}
+
 p {
  margin: 10px;
 }
